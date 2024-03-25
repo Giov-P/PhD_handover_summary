@@ -1,14 +1,11 @@
 # PhD handover summary
 Summary of all the repositories, presentations, documents and dataset used during the Ph.D. at isardSAT.
-
-### Misc. Technical slides:
-
-- **Introduction to AI** -> [link](https://docs.google.com/presentation/d/1GsTj-MbLT0SW1DoLU7uCLaX_iZk4yj8jpZbfmoqD_Qw/edit#slide=id.p) (initial INTRO to the principle of AI **SLIDE 31** with lots of resources).
-
-- How to access **SAIH EBRO** -> [link](https://docs.google.com/presentation/d/1y4e0SLYXRXzIfysTGe8UqB9wWhGCQS4KxfwEEo76IA8/edit#slide=id.gf0544e0161_0_61) (useful to get 1. in situ water height from reservoirs and 2. water allocation for different irrigation canals in Catalunya and the Ebro basin).
-
-- **SIGPAC** - how to add it in QGIS -> [link](https://docs.google.com/presentation/d/1a6Sk5DsKvHKe29E5USB0jlVfFQ7LXLjNizvhWj8wUKk/edit#slide=id.p) (quick guide to add WMS resources to QGIS and visualize SIGPAC Catalunya).
-
+ |  Project    | Slides | GitHub                                                                         | Papers | Dataset Location in dl20 "/data/PhDGiovanni" |
+|-------|--------|--------------------------------------------------------------------------------|--------|------------------|
+| 1. Dispatch      |  [LSTsharpener](https://docs.google.com/presentation/d/1i-XYadTt__Br83W81USkN0ePEEXVYtIGd0fMoC1eymI/edit#slide=id.g1f2ff14f5a1_0_0)  | [LSTsharpener](https://github.com/isardsat/LST_sharpener),  [Dispatch](https://github.com/isardsat/tero-1km-soil-moisture) |  [paper1](https://www.mdpi.com/2072-4292/14/1/167)      |  ../DISPATCH/DISPATCH_Lleida_20m, ../DISPATCH/DISPATCH_Lleida_100m/DATA, ../LST/DATA             |
+| 2. Irrigation Systems      |   [link](https://docs.google.com/presentation/d/1_th1-VtyWy-oqt1lbkgujR8RRjqq6cMJWxACFTWHlOw/edit#slide=id.g118d459a44c_0_0)     |        [link](https://github.com/isardsat/irrigation-systems-classification)                |  [paper2](https://ieeexplore.ieee.org/document/9954144)      | ../AI/dl-4-tsc/DATA |
+| 3. PrISM      |  [link](https://docs.google.com/presentation/d/1_27YzC9SrNWkBGt3T-VP18xBooTitWtpE4ogA3y714E/edit#slide=id.g22cc186795e_0_167)      |         [link](https://github.com/Giov-P/PrISM)             |  [paper3](https://doi.org/10.1016/j.agwat.2023.108594), [paper4](https://www.mdpi.com/2072-4292/16/7/1116)      | ../5.IrriEst/DATA |
+| misc. | [MLintro](https://docs.google.com/presentation/d/1GsTj-MbLT0SW1DoLU7uCLaX_iZk4yj8jpZbfmoqD_Qw/edit#slide=id.p), [SIGPAC](https://docs.google.com/presentation/d/1a6Sk5DsKvHKe29E5USB0jlVfFQ7LXLjNizvhWj8wUKk/edit#slide=id.p), [SAIH](https://docs.google.com/presentation/d/1y4e0SLYXRXzIfysTGe8UqB9wWhGCQS4KxfwEEo76IA8/edit#slide=id.gf0544e0161_0_61) [wildfires](https://docs.google.com/presentation/d/1Uqom_LXTuXyzhn4otzgjTwfgQpApuXHcGFjY8tJbZdA/edit#slide=id.p)       | [wildfires](https://github.com/PiSchool/noa-xai-for-wildfire-forecasting) |        |  ./SIGPAC/DATA, ./SIGPAC/SIGPAC_ARAGON/data                |
 
 ## 1<sup>st</sup> project: SM at Field Level (20 or 100m)
 
@@ -66,15 +63,24 @@ INPUTS:
 
 
 RESOURCES:
+- **Papers:** [link1](https://doi.org/10.1016/j.agwat.2023.108594), [link2](https://www.mdpi.com/2072-4292/16/7/1116)
 - **GitHub repository** [link](https://github.com/Giov-P/PrISM)
 - **Slides** EGU PrISM: [link](https://docs.google.com/presentation/d/1_27YzC9SrNWkBGt3T-VP18xBooTitWtpE4ogA3y714E/edit#slide=id.g22cc186795e_0_167)
 
 TO DO (suggestions for code improvements):
 1. Run it with field level SM from dispatch with Landsat (results at field-level might improve given more data available at field-level).
 2. Test it with fully remote-sensing inputs (e.g., precipitation from reanalysis datasets).
-3. It might be possible to move from this model to a fully data-driven model (assimilating SM in a ML model) or a physic-based model (PINN using water balance and assimilating SM) that can be trained on dry areas using precipitation as target and then used to predict irrigation amounts. This approach might be more robust and widely applicable.
+3. It might be possible to move from this model to a fully data-driven model (assimilating SM in a ML model) or a physic-based model (PINN using water balance and assimilating SM) that can be trained on dry areas using precipitation as target and then used to predict irrigation amounts. This approach might be more robust and widely applicable. *(I started some tests with PINNS in dl20, path=/data/PhDGiovanni/6.ML_IRRIEST/)*
 
-## Extra project: xAI for wildfire monitoring 
+## Miscellaneous: Technical slides
+
+- **Introduction to AI** -> [link](https://docs.google.com/presentation/d/1GsTj-MbLT0SW1DoLU7uCLaX_iZk4yj8jpZbfmoqD_Qw/edit#slide=id.p) (initial INTRO to the principle of AI **SLIDE 31** with lots of resources).
+
+- How to access **SAIH EBRO** -> [link](https://docs.google.com/presentation/d/1y4e0SLYXRXzIfysTGe8UqB9wWhGCQS4KxfwEEo76IA8/edit#slide=id.gf0544e0161_0_61) (useful to get 1. in situ water height from reservoirs and 2. water allocation for different irrigation canals in Catalunya and the Ebro basin).
+
+- **SIGPAC** - how to add it in QGIS -> [link](https://docs.google.com/presentation/d/1a6Sk5DsKvHKe29E5USB0jlVfFQ7LXLjNizvhWj8wUKk/edit#slide=id.p) (quick guide to add WMS resources to QGIS and visualize SIGPAC Catalunya).
+
+## [Extra project]: xAI for wildfire monitoring 
 Side project to investigate explainability models applied to a binary semantic segmentation task for wildfire forecasting at a global scale (seasonal to subseasonal). Developed in the framework of the ESA Phi-Lab [seasfire](https://seasfire.hua.gr/) project and as part of the fellowship for AI research from [Pi-school](https://picampus-school.com/earth-observation-full-grant-fellowships-available/).
 
 RESOURCES:
