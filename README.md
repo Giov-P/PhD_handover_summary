@@ -23,9 +23,11 @@ RESOURCES:
 - **Slides** LST enhanced at 100 m (Sentinel-3/Landsat) [link](https://docs.google.com/presentation/d/1i-XYadTt__Br83W81USkN0ePEEXVYtIGd0fMoC1eymI/edit#slide=id.g1f2ff14f5a1_0_0)
 
 ## 2<sup>nd</sup> project: Classification of Irrigation Systems
-RESOURCES:
+This project focused on training 3 different supervised ML time-series classification models ([Time Series Forest Classifier](https://www.sktime.net/en/stable/api_reference/auto_generated/sktime.classification.interval_based.TimeSeriesForestClassifier.html), [Rocket](https://www.sktime.net/en/latest/api_reference/auto_generated/sktime.transformations.panel.rocket.Rocket.html) and [ResNET](https://www.sktime.net/en/latest/api_reference/auto_generated/sktime.classification.deep_learning.ResNetClassifier.html)) to classify different irrigation systems. 
 
-- **GitHub repository** [link](https://github.com/isardsat/irrigation-systems-classification)
+RESOURCES:
+- **Paper:** [link](https://ieeexplore.ieee.org/document/9954144)
+- **GitHub repository** step-by-step classification: [link](https://github.com/isardsat/irrigation-systems-classification)
 - **Slides** Irrigation Systems: [link](https://docs.google.com/presentation/d/1_th1-VtyWy-oqt1lbkgujR8RRjqq6cMJWxACFTWHlOw/edit#slide=id.g118d459a44c_0_0)
 ## 3<sup>rd</sup> project: Irrigation Amounts with PrISM
 RESOURCES:
